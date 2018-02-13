@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56E178ED-95B4-43E1-977E-79DE7F547C4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StringKingUI</RootNamespace>
+    <AssemblyName>StringKing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseLib, Version=4.2.3.6875, Culture=neutral, PublicKeyToken=cfdca7081364f156, processorArchitecture=MSIL">
+      <HintPath>..\ReferencedAssemblies\BaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Commanding">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\Commanding.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandingWinForms">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\CommandingWinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EventAggregation">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\EventAggregation.dll</HintPath>
+    </Reference>
+    <Reference Include="ExternalTools">
+      <HintPath>..\ReferencedAssemblies\ExternalTools.dll</HintPath>
+    </Reference>
+    <Reference Include="GuiLib, Version=4.2.3.6875, Culture=neutral, PublicKeyToken=cfdca7081364f156, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\GuiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Infrastructure">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectGraphML">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\ObjectGraphML.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyChangedNotification">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\PropertyChangedNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TypeConversion">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\TypeConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="UILibrary">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\UILibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\ArgumentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ArgumentControl.Designer.cs">
+      <DependentUpon>ArgumentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandKeys.cs" />
+    <Compile Include="Controls\ArgumentsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ArgumentsControl.Designer.cs">
+      <DependentUpon>ArgumentsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MacroRecorder.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ArgumentControl.resx">
+      <DependentUpon>ArgumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ArgumentsControl.resx">
+      <DependentUpon>ArgumentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBoxControl.resx">
+      <DependentUpon>TextBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="macros\DuplicateRemover.macro">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="macros\GuidGenerator.macro">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="macros\GuidGeneratorPrefix.macro">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="macros\PascalCaseUnderscoreExpression.macro">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\TextBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxControl.Designer.cs">
+      <DependentUpon>TextBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <DependentUpon>Resource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StringFunctionInterfacePCL\StringFunctionInterfacePCL.csproj">
+      <Project>{0c408768-f180-4cee-9026-3178f04ff80d}</Project>
+      <Name>StringFunctionInterfacePCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringFunctionsDnpExtensionsPCL\StringFunctionsDnpExtensionsPCL.csproj">
+      <Project>{262ff517-9ab0-4a57-8531-513f1b2a74be}</Project>
+      <Name>StringFunctionsDnpExtensionsPCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringFunctionsFullCL\StringFunctionsFullCL.csproj">
+      <Project>{cfc49b83-b05a-4a18-831d-559509a4e268}</Project>
+      <Name>StringFunctionsFullCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringFunctionsPCL\StringFunctionsPCL.csproj">
+      <Project>{35ed7207-766b-48c9-bb17-582ee7c1f9e8}</Project>
+      <Name>StringFunctionsPCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringKing.Core\StringKing.Core.csproj">
+      <Project>{28a63b00-79fc-4370-9908-0b4b70d8ad88}</Project>
+      <Name>StringKing.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringKingInfrastructure\StringKingInfrastructure.csproj">
+      <Project>{73E10AC1-72DE-478C-B883-A797485EB827}</Project>
+      <Name>StringKingInfrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Definitions\MenuStripMain.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Definitions\ToolStripMain.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\videocamera.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\videocamera_pause.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\videocamera_run.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\videocamera_stop.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>set targetDir=C:\Users\ima\Dropbox\tools\StringKing
+rem if exist %25targetDir%25 robocopy.exe $(TargetDir) %25targetDir%25 /E /ZB /COPYALL /V /R:1 /W:1 /PURGE /XO /ETA /XF *vshost* macros
+
+rem Robocopy outputs 1 upon success, unlike most programs that exit with 0 on success.
+if %25errorlevel%25 == 1 set errorlevel=0</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

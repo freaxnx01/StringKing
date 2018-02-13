@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recorded>2011-04-17T14:45:42.03125+02:00</Recorded>
+  <Commands>
+    <string>GuidGenerator(20)</string>
+    <string>Replace(&quot;-&quot;,&quot;&quot;)</string>
+    <string>Sort()</string>
+    <string>InsertAt(0,&quot;{&quot;,-1,&quot;}&quot;)</string>
+    <string>InsertAt(0,&quot;guid: &quot;,-1,&quot;&quot;)</string>
+  </Commands>
+</Macro>
