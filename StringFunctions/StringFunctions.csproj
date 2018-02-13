@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{251E5821-BD43-4CAB-AE96-84E8E5C64EE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StringKing.StringFunctions</RootNamespace>
+    <AssemblyName>StringFunctions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedStringFunctionAssembly.cs">
+      <Link>Properties\SharedStringFunctionAssembly.cs</Link>
+    </Compile>
+    <Compile Include="AutoIncrementNumber.cs" />
+    <Compile Include="ChopAt.cs" />
+    <Compile Include="ChopFromFirstOccurrenceOfCharToEndOfString.cs" />
+    <Compile Include="CompareWithWinMerge.cs" />
+    <Compile Include="PasteFromClipboard.cs" />
+    <Compile Include="CopyToClipboard.cs" />
+    <Compile Include="DuplicateFinder.cs" />
+    <Compile Include="ExtractGuids.cs" />
+    <Compile Include="ExtractLowerCaseWords.cs" />
+    <Compile Include="ExtractUpperCaseWords.cs" />
+    <Compile Include="FileDescriptionTableCsvToXml.cs" />
+    <Compile Include="FileDescriptionTableFixedLengthToXml.cs" />
+    <Compile Include="FirstCharUpperCase.cs" />
+    <Compile Include="LowerCaseGuids.cs" />
+    <Compile Include="MergeLines.cs" />
+    <Compile Include="PathGetPathRoot.cs" />
+    <Compile Include="PathGetFullPath.cs" />
+    <Compile Include="PathGetFileNameWithoutExtension.cs" />
+    <Compile Include="PathGetFileName.cs" />
+    <Compile Include="PathGetExtension.cs" />
+    <Compile Include="PathGetDirectoryName.cs" />
+    <Compile Include="PathChangeExtension.cs" />
+    <Compile Include="RandomizeElementOrder.cs" />
+    <Compile Include="RegexEscape.cs" />
+    <Compile Include="RemoveCharAndCamelCaseFollowingWord.cs" />
+    <Compile Include="RemoveLinesContains.cs" />
+    <Compile Include="RemoveLinesStartingWith.cs" />
+    <Compile Include="RemoveUnneededClosingXmlTag.cs" />
+    <Compile Include="RemoveDigits.cs" />
+    <Compile Include="Replace.cs" />
+    <Compile Include="FormatXml.cs" />
+    <Compile Include="GuidGenerator.cs" />
+    <Compile Include="HexConverterFrom.cs" />
+    <Compile Include="HexConverterTo.cs" />
+    <Compile Include="Base64ConverterFrom.cs" />
+    <Compile Include="Base64ConverterTo.cs" />
+    <Compile Include="DuplicateRemover.cs" />
+    <Compile Include="InsertAt.cs" />
+    <Compile Include="Join.cs" />
+    <Compile Include="LowerCase.cs" />
+    <Compile Include="MD5Hasher.cs" />
+    <Compile Include="PrettifyXml.cs" />
+    <Compile Include="RemoveEmptyLines.cs" />
+    <Compile Include="RemoveLineBreaks.cs" />
+    <Compile Include="Reverse.cs" />
+    <Compile Include="ReverseList.cs" />
+    <Compile Include="SkipEveryNthLine.cs" />
+    <Compile Include="Sort.cs" />
+    <Compile Include="SplitAndTakeAtIndexX.cs" />
+    <Compile Include="SplitByLengthPreserveWords.cs" />
+    <Compile Include="Swap.cs" />
+    <Compile Include="TakeLinesWhichContainsX.cs" />
+    <Compile Include="TitleCase.cs" />
+    <Compile Include="Trim.cs" />
+    <Compile Include="TrimEnd.cs" />
+    <Compile Include="TrimStart.cs" />
+    <Compile Include="UnformatXml.cs" />
+    <Compile Include="UpperCase.cs" />
+    <Compile Include="UpperCaseGuids.cs" />
+    <Compile Include="UrlDecode.cs" />
+    <Compile Include="UrlEncode.cs" />
+    <Compile Include="UrlPathEncode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StringFunctionInterface\StringFunctionInterface.csproj">
+      <Project>{D8E117ED-0B86-46DD-8FF6-7FFA7FC2E175}</Project>
+      <Name>StringFunctionInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

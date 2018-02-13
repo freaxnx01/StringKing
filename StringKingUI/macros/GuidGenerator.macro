@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recorded>2011-04-17T14:00:49.765625+02:00</Recorded>
+  <Commands>
+    <string>GuidGenerator(15)</string>
+    <string>SkipEveryNthLine(2)</string>
+    <string>Upper case()</string>
+    <string>Sort()</string>
+    <string>ReverseList()</string>
+  </Commands>
+</Macro>

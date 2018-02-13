@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Macro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recorded>2011-04-17T14:51:23.375+02:00</Recorded>
+  <Commands>
+    <string>DuplicateRemover()</string>
+    <string>FirstCharUpperCase()</string>
+    <string>HexConverterTo()</string>
+    <string>RemoveDigits()</string>
+    <string>Replace("f", "")</string>
+  </Commands>
+</Macro>

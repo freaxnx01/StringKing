@@ -1,0 +1,127 @@
+Kann Macro ein anderes Macro aufrufen?
+
+----------------------------------------------------------------------------
+
+Dictionary<string, object> arguments
+wieso nicht Dictionary<string, StringFunctionArgument> arguments ?
+
+----------------------------------------------------------------------------
+
+ObjectGraphML
+
+xmlns:x="http://informing.ch/2011/ObjectGraphML"
+
+C:\Work\PersonalThings\ima\Tools\StringKing\StringKingUI\Definitions\MenuStrip.xml
+
+Variablen
+
+common.xml
+
+<Variables>
+	<Variable name="StandardFontName" value="Verdana"/>
+	<Variable name="StandardFontSize" value="10.5"/>
+
+<Templates>
+		<Template name="StandardStyle" Font="Verdana, 11" .../>
+	
+
+MenuStrip.xml
+	
+<x:Include source="common.xml">
+	
+<Label Font="$(FontName), 12.75" 
+
+<Label x:ApplyTemplate="StandardStyle"
+
+- Kaxaml für ObjectGrahpML 
+
+----------------------------------------------------------------------------
+
+EventAggregation
+
+dnp EventAggregator
+
+DI/IoC StructureMap
+
+public Container Run(Dispatcher dispatcher)
+{
+	return new Container(x =>
+	{
+		// Event Aggregator
+		x.ForSingletonOf<IEventAggregator>()
+			.Use<EventAggregator>()
+				.Ctor<Dispatcher>()
+					.Is(dispatcher);
+
+		// Register Handlers with Event Aggregator
+		x.For(typeof(IHandle<>)).EnrichWith((context, instance) =>
+		{
+			context.GetInstance<IEventAggregator>().Subscribe(instance);
+			return instance;
+		});
+	});
+}
+
+----------------------------------------------------------------------------
+
+Test (Unit-testing für StringFunctions)
+
+----------------------------------------------------------------------------
+
+Ideen String-Funktionen
+-----------------------
+
+- Replace (regex)
+- Zeilennumerierung einfügen (Format 000, Schritte 1|10|100)
+- PadLeft, PadRight (Space oder char)
+- Trim mit Zeilen/ohne Zeilen
+- upper case first char oder irgend eine Pos im String
+- Pfad kürzen c:\temp\...\xy
+- Path remove invalid chars
+- List inavalid path chars (System.IO.Path.InvalidPathChars)
+    
+----------------------------------------------------------------------------
+
+dnpextensions -> StringKing (StringFunctionsDnpExtensions)
+
+public static string GetAfter(this string value, string x)
+{
+    int num = value.LastIndexOf(x);
+    if (num != -1)
+    {
+        int startIndex = num + x.Length;
+        if (startIndex < value.Length)
+        {
+            return value.Substring(startIndex).Trim();
+        }
+    }
+    return string.Empty;
+}
+
+public static string GetBefore(this string value, string x)
+{
+    int index = value.IndexOf(x);
+    if (index != -1)
+    {
+        return value.Substring(0, index);
+    }
+    return string.Empty;
+}
+
+public static string GetBetween(this string value, string x, string y)
+{
+    int index = value.IndexOf(x);
+    int num2 = value.LastIndexOf(y);
+    switch (index)
+    {
+        case -1:
+        case -1:
+            return string.Empty;
+    }
+    int startIndex = index + x.Length;
+    if (startIndex < num2)
+    {
+        return value.Substring(startIndex, num2 - startIndex).Trim();
+    }
+    return string.Empty;
+}
