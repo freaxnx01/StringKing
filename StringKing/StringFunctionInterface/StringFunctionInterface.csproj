@@ -56,7 +56,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>set relPathToBase=..\..\
+    <PreBuildEvent>set relPathToBase=..\
 set sourceDir=$(SolutionDir)%25relPathToBase%25PersonalLibrary\Deploy\$(ConfigurationName)
 echo %25sourceDir%25
 set targetDir=$(SolutionDir)ReferencedAssemblies\PersonalLibrary
