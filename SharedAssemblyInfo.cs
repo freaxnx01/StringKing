@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("StringKing")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Informing AG")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("StringKing")]
-[assembly: AssemblyCopyright("Copyright © 2011 Informing AG, Zug")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
