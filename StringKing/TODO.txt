@@ -9,7 +9,7 @@ wieso nicht Dictionary<string, StringFunctionArgument> arguments ?
 
 ObjectGraphML
 
-xmlns:x="http://informing.ch/2011/ObjectGraphML"
+xmlns:x="http://freaxnx01.ch/2018/ObjectGraphML"
 
 C:\Work\PersonalThings\ima\Tools\StringKing\StringKingUI\Definitions\MenuStrip.xml
 

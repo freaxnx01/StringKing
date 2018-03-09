@@ -55,8 +55,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BaseLib, Version=4.2.3.6875, Culture=neutral, PublicKeyToken=cfdca7081364f156, processorArchitecture=MSIL">
-      <HintPath>..\ReferencedAssemblies\BaseLib.dll</HintPath>
+    <Reference Include="BaseLib">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\BaseLib.dll</HintPath>
     </Reference>
     <Reference Include="Commanding">
       <HintPath>..\ReferencedAssemblies\PersonalLibrary\Commanding.dll</HintPath>
@@ -68,11 +68,10 @@
       <HintPath>..\ReferencedAssemblies\PersonalLibrary\EventAggregation.dll</HintPath>
     </Reference>
     <Reference Include="ExternalTools">
-      <HintPath>..\ReferencedAssemblies\ExternalTools.dll</HintPath>
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\ExternalTools.dll</HintPath>
     </Reference>
-    <Reference Include="GuiLib, Version=4.2.3.6875, Culture=neutral, PublicKeyToken=cfdca7081364f156, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ReferencedAssemblies\GuiLib.dll</HintPath>
+    <Reference Include="GuiLib">
+      <HintPath>..\ReferencedAssemblies\PersonalLibrary\GuiLib.dll</HintPath>
     </Reference>
     <Reference Include="Infrastructure">
       <HintPath>..\ReferencedAssemblies\PersonalLibrary\Infrastructure.dll</HintPath>
