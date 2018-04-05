@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 using EventAggregation;
 
-using StringKing.StringFunctionInterface;
+using StringKing.FunctionInterface;
 using StringKing.Infrastructure;
-using StringKingProcessor;
+using StringKing.Core;
 
 namespace StringKingUI
 {

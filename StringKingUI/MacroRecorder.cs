@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using StringKing.StringFunctionInterface;
-using StringKingProcessor;
+using StringKing.Core;
+using StringKing.FunctionInterface;
 
 namespace StringKingUI
 {

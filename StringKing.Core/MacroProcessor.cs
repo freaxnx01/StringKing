@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-using StringKing.StringFunctionInterface;
+using StringKing.FunctionInterface;
 
-namespace StringKingProcessor
+namespace StringKing.Core
 {
     public class MacroProcessor
     {

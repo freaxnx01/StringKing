@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,8 +9,8 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StringKingUI</RootNamespace>
-    <AssemblyName>StringKing</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AssemblyName>StringKingUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -131,6 +131,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringFunctionSelectedMessage.cs" />
     <EmbeddedResource Include="Controls\ArgumentControl.resx">
       <DependentUpon>ArgumentControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,32 +195,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StringFunctionInterfacePCL\StringFunctionInterfacePCL.csproj">
-      <Project>{0c408768-f180-4cee-9026-3178f04ff80d}</Project>
-      <Name>StringFunctionInterfacePCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StringFunctionsDnpExtensionsPCL\StringFunctionsDnpExtensionsPCL.csproj">
-      <Project>{262ff517-9ab0-4a57-8531-513f1b2a74be}</Project>
-      <Name>StringFunctionsDnpExtensionsPCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StringFunctionsFullCL\StringFunctionsFullCL.csproj">
-      <Project>{cfc49b83-b05a-4a18-831d-559509a4e268}</Project>
-      <Name>StringFunctionsFullCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StringFunctionsPCL\StringFunctionsPCL.csproj">
-      <Project>{35ed7207-766b-48c9-bb17-582ee7c1f9e8}</Project>
-      <Name>StringFunctionsPCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StringKing.Core\StringKing.Core.csproj">
-      <Project>{28a63b00-79fc-4370-9908-0b4b70d8ad88}</Project>
-      <Name>StringKing.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StringKingInfrastructure\StringKingInfrastructure.csproj">
-      <Project>{73E10AC1-72DE-478C-B883-A797485EB827}</Project>
-      <Name>StringKingInfrastructure</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Definitions\MenuStripMain.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -238,6 +213,7 @@
     <Content Include="icons\videocamera_stop.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -255,6 +231,20 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StringKing.FunctionInterface\StringKing.FunctionInterface.csproj">
+      <Project>{11b22031-4159-478b-82b5-a3d1d04a4a00}</Project>
+      <Name>StringKing.FunctionInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringKing.Functions\StringKing.Functions.csproj">
+      <Project>{069e554c-0e16-42e8-a377-d99ef8b9879e}</Project>
+      <Name>StringKing.Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringKing.Core\StringKing.Core.csproj">
+      <Project>{321c9cdf-0afa-46b9-a647-80ccfc1c61e1}</Project>
+      <Name>StringKing.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

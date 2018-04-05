@@ -11,10 +11,10 @@ using EventAggregation;
 using Infrastructure;
 using Library.Gui.ExternalTools;
 
-using StringKingProcessor;
 using StringKing.Infrastructure;
-using StringKing.StringFunctionInterface;
+using StringKing.FunctionInterface;
 using Resources;
+using StringKing.Core;
 
 namespace StringKingUI
 {

@@ -4,10 +4,9 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using StringKing.FunctionInterface;
 
-using StringKing.StringFunctionInterface;
-
-namespace StringKingProcessor
+namespace StringKing.Core
 {
     public class Processor
     {
@@ -65,8 +64,8 @@ namespace StringKingProcessor
             //    }
             //}
 
-            listOfAssembly.Add(typeof(StringKing.StringFunctions.AutoIncrementNumber).Assembly);
-            listOfAssembly.Add(typeof(StringFunctionsDnpExtensions.EnsureEndsWith).Assembly);
+            listOfAssembly.Add(typeof(StringKing.Functions.AutoIncrementNumber).Assembly);
+            //listOfAssembly.Add(typeof(StringFunctionsDnpExtensions.EnsureEndsWith).Assembly);
 
             return listOfAssembly;
         }

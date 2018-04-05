@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StringKingProcessor
+namespace StringKing.Core
 {
     public class StringFunctionItem
     {
