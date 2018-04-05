@@ -1,0 +1,65 @@
+Kann Macro ein anderes Macro aufrufen?
+
+----------------------------------------------------------------------------
+
+Dictionary<string, object> arguments
+wieso nicht Dictionary<string, StringFunctionArgument> arguments ?
+
+----------------------------------------------------------------------------
+
+ObjectGraphML
+
+xmlns:x="http://freaxnx01.ch/2018/ObjectGraphML"
+
+C:\Work\PersonalThings\ima\Tools\StringKing\StringKingUI\Definitions\MenuStrip.xml
+
+Variablen
+
+common.xml
+
+<Variables>
+	<Variable name="StandardFontName" value="Verdana"/>
+	<Variable name="StandardFontSize" value="10.5"/>
+
+<Templates>
+		<Template name="StandardStyle" Font="Verdana, 11" .../>
+	
+
+MenuStrip.xml
+	
+<x:Include source="common.xml">
+	
+<Label Font="$(FontName), 12.75" 
+
+<Label x:ApplyTemplate="StandardStyle"
+
+- Kaxaml für ObjectGrahpML 
+
+----------------------------------------------------------------------------
+
+EventAggregation
+
+dnp EventAggregator
+
+DI/IoC StructureMap
+
+public Container Run(Dispatcher dispatcher)
+{
+	return new Container(x =>
+	{
+		// Event Aggregator
+		x.ForSingletonOf<IEventAggregator>()
+			.Use<EventAggregator>()
+				.Ctor<Dispatcher>()
+					.Is(dispatcher);
+
+		// Register Handlers with Event Aggregator
+		x.For(typeof(IHandle<>)).EnrichWith((context, instance) =>
+		{
+			context.GetInstance<IEventAggregator>().Subscribe(instance);
+			return instance;
+		});
+	});
+}
+
+----------------------------------------------------------------------------
