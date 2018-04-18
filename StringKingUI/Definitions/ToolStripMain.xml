@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ToolStrip xmlns="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
            xmlns:cmd="clr-namespace:CommandingWinForms;assembly=CommandingWinForms"
-           xmlns:res="clr-namespace:Resources;assembly=StringKing"
+           xmlns:res="clr-namespace:Resources;assembly=StringKingUI"
            xmlns:x="http://freaxnx01.ch/2018/ObjectGraphML"
            ImageScalingSize="32, 32">
   <Items>

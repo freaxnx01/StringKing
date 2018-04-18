@@ -12,8 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKingUI", "StringKingU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringKing.Functions", "StringKing.Functions\StringKing.Functions.csproj", "{069E554C-0E16-42E8-A377-D99EF8B9879E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringKing.FunctionInterface", "StringKing.FunctionInterface\StringKing.FunctionInterface.csproj", "{11B22031-4159-478B-82B5-A3D1D04A4A00}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringKing.Core", "StringKing.Core\StringKing.Core.csproj", "{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}"
 EndProject
 Global
@@ -30,10 +28,6 @@ Global
 		{069E554C-0E16-42E8-A377-D99EF8B9879E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{069E554C-0E16-42E8-A377-D99EF8B9879E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{069E554C-0E16-42E8-A377-D99EF8B9879E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11B22031-4159-478B-82B5-A3D1D04A4A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11B22031-4159-478B-82B5-A3D1D04A4A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11B22031-4159-478B-82B5-A3D1D04A4A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11B22031-4159-478B-82B5-A3D1D04A4A00}.Release|Any CPU.Build.0 = Release|Any CPU
 		{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}.Release|Any CPU.ActiveCfg = Release|Any CPU

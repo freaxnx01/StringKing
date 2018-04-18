@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StringKing.FunctionInterface\StringKing.FunctionInterface.csproj" />
     <ProjectReference Include="..\StringKing.Functions\StringKing.Functions.csproj" />
   </ItemGroup>
 

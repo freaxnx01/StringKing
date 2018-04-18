@@ -233,10 +233,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StringKing.FunctionInterface\StringKing.FunctionInterface.csproj">
-      <Project>{11b22031-4159-478b-82b5-a3d1d04a4a00}</Project>
-      <Name>StringKing.FunctionInterface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StringKing.Functions\StringKing.Functions.csproj">
       <Project>{069e554c-0e16-42e8-a377-d99ef8b9879e}</Project>
       <Name>StringKing.Functions</Name>
