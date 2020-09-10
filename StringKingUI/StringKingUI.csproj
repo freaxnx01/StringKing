@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StringKingUI</RootNamespace>
     <AssemblyName>StringKingUI</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -56,31 +56,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BaseLib">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\BaseLib.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\BaseLib.dll</HintPath>
     </Reference>
     <Reference Include="Commanding">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\Commanding.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\Commanding.dll</HintPath>
     </Reference>
     <Reference Include="CommandingWinForms">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\CommandingWinForms.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\CommandingWinForms.dll</HintPath>
     </Reference>
     <Reference Include="EventAggregation">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\EventAggregation.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\EventAggregation.dll</HintPath>
     </Reference>
     <Reference Include="ExternalTools">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\ExternalTools.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\ExternalTools.dll</HintPath>
     </Reference>
     <Reference Include="GuiLib">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\GuiLib.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\GuiLib.dll</HintPath>
     </Reference>
     <Reference Include="Infrastructure">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\Infrastructure.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="ObjectGraphML">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\ObjectGraphML.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\ObjectGraphML.dll</HintPath>
     </Reference>
     <Reference Include="PropertyChangedNotification">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\PropertyChangedNotification.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\PropertyChangedNotification.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -99,10 +99,10 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="TypeConversion">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\TypeConversion.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\TypeConversion.dll</HintPath>
     </Reference>
     <Reference Include="UILibrary">
-      <HintPath>..\ReferencedAssemblies\PersonalLibrary\UILibrary.dll</HintPath>
+      <HintPath>..\..\PersonalLibrary\Deploy\Debug\UILibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A458143-D5CE-4452-8E7A-49402F6BEF87}"
 	ProjectSection(SolutionItems) = preProject
 		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
+		TODO.txt = TODO.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKingUI", "StringKingUI\StringKingUI.csproj", "{56E178ED-95B4-43E1-977E-79DE7F547C4C}"
@@ -13,6 +14,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringKing.Functions", "StringKing.Functions\StringKing.Functions.csproj", "{069E554C-0E16-42E8-A377-D99EF8B9879E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringKing.Core", "StringKing.Core\StringKing.Core.csproj", "{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKing.ManualTest", "StringKing.ManualTest\StringKing.ManualTest.csproj", "{02390CE2-E159-4454-B1D1-1E533EDA09E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +35,10 @@ Global
 		{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{321C9CDF-0AFA-46B9-A647-80CCFC1C61E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02390CE2-E159-4454-B1D1-1E533EDA09E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02390CE2-E159-4454-B1D1-1E533EDA09E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02390CE2-E159-4454-B1D1-1E533EDA09E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02390CE2-E159-4454-B1D1-1E533EDA09E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 using StringKing.FunctionInterface;
+using System.Reflection;
 
 namespace StringKing.Functions
 {
@@ -24,6 +25,11 @@ namespace StringKing.Functions
             }
 
             return sb.ToString();
+        }
+
+        public static string Execute(params string[] input)
+        {
+            return StringFunctionBase.CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

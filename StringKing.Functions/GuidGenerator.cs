@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using StringKing.FunctionInterface;
 
 namespace StringKing.Functions
 {
     [StringFunction("GuidGenerator")]
-    public class GuidGenerator  : StringFunctionBase
+    public class GuidGenerator : StringFunctionBase
     {
         private const string ARGUMENT_NUMBER_OF = "numberof";
 
@@ -38,12 +40,27 @@ namespace StringKing.Functions
                 sb.AppendLine(Guid.NewGuid().ToString());
             }
 
-            return sb.ToString();
+            return sb.ToString().TrimEnd();
         }
 
         public override string GetTestString()
         {
             return Guid.NewGuid().ToString();
+        }
+
+        //***
+        public static string Execute(params string[] input)
+        {
+            return StringFunctionBase.CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
+        }
+
+        public static string Execute(int numberOf, params string[] input)
+        {
+            var args = new Dictionary<string, object>()
+            {
+                {  nameof(numberOf), numberOf }
+            };
+            return StringFunctionBase.CallDirect(MethodBase.GetCurrentMethod().DeclaringType, args, input);
         }
     }
 }

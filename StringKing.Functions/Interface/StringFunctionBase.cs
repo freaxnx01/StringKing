@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography.X509Certificates;
+using System.Reflection;
 
 namespace StringKing.FunctionInterface
 {
@@ -121,6 +123,38 @@ namespace StringKing.FunctionInterface
             }
 
             return input.Split(new string[] { Environment.NewLine }, StringSplitOptions.None).ToList();
+        }
+
+        protected static Dictionary<string, object> InitValueWithDefaultValue(Dictionary<string, object> args)
+        {
+            args.ToList().ForEach(a => ((StringFunctionArgument)a.Value).Value = ((StringFunctionArgument)a.Value).DefaultValue);
+            return args;
+        }
+        #endregion
+
+        #region Direct call
+        //***
+
+        protected static string CallDirect(Type callingType, Dictionary<string, object> args, params string[] input)
+        {
+            var instance = Activator.CreateInstance(callingType) as StringFunctionBase;
+            if (instance == null) throw new NotSupportedException();
+            var callArgs = args != null ? ConvertSimpleArguments(args) : GetDefaultArguments(instance);
+            return instance.ExecuteFunction(input, callArgs);
+        }
+
+        private static Dictionary<string, object> GetDefaultArguments(StringFunctionBase instance)
+        {
+            var args = instance.GetListOfArgument();
+            InitValueWithDefaultValue(args);
+            return args;
+        }
+
+        private static Dictionary<string, object> ConvertSimpleArguments(Dictionary<string, object> args)
+        {
+            var callArgs = new Dictionary<string, object>();
+            args.ToList().ForEach(a => callArgs.Add(a.Key.ToLower(), new StringFunctionArgument(a.Key.ToLower()) { Value = a.Value }));
+            return callArgs;
         }
         #endregion
 

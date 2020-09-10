@@ -1,3 +1,17 @@
+
+Comfort:
+
+For every StringFunction:
+- StringFunctionExtension.cs
+- public static string Execute(params string[] input)
+
+How to test if code was extended?
+Unit tests for:
+- StringFunctionExtension.cs: Does method exist with name
+- Execute method exists in class
+
+---
+
 Kann Macro ein anderes Macro aufrufen?
 
 ----------------------------------------------------------------------------

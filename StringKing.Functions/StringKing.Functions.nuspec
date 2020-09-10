@@ -12,7 +12,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>A library for string/text manipulation</description>
 		<releaseNotes/>
-		<copyright>Copyright 2018</copyright>
+		<copyright>Copyright 2020</copyright>
 		<tags>Sort MD5 hasher Encode/Decode Base64 strings HEX encode/decode</tags>
 	</metadata>
 	<!--
