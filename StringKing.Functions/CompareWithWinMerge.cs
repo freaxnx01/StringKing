@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using StringKing.FunctionInterface;
 
@@ -46,6 +47,11 @@ namespace StringKing.Functions
         private string EncloseInQuotes(string path)
         {
             return string.Format("\"{0}\"", path);
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
 using StringKing.FunctionInterface;
@@ -38,6 +39,11 @@ namespace StringKing.Functions
                 sb.Append(" ");
             }
             return sb.ToString().TrimEnd();
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

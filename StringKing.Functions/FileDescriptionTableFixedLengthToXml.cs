@@ -5,6 +5,7 @@ using System.Text;
 using StringKing.FunctionInterface;
 using System.Xml;
 using System.IO;
+using System.Reflection;
 
 namespace StringKing.Functions
 {
@@ -172,6 +173,11 @@ Charge		CHAR(20)
 Menge		DEZ(10.2)			
 SSCC		CHAR(18)			
 GTIN 		CHAR(14)			";
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using StringKing.FunctionInterface;
 using System.Xml;
 using System.IO;
+using System.Reflection;
 
 namespace StringKing.Functions
 {
@@ -115,6 +116,11 @@ HTXT01
     FREIER-TEXT-4
     FREIER-TEXT-5
     FREIER-TEXT-CODE";
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

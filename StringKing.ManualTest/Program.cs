@@ -15,10 +15,10 @@ namespace StringKing.ManualTest
             var result = string.Empty;
 
             // MD5Hasher
-            var x = new StringKing.Functions.MD5Hasher();
+            var x = new StringKing.Functions.Md5Hasher();
             //result = x.ExecuteFunction(new string[] { "abcd" }, null);
             
-            result = StringKing.Functions.MD5Hasher.Execute("abcd");
+            result = StringKing.Functions.Md5Hasher.Execute("abcd");
             result = "abcd".MD5Hash();
 
             // GuidGenerator

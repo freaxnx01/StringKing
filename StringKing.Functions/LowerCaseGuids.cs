@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text.RegularExpressions;
 
 using StringKing.FunctionInterface;
@@ -33,6 +34,11 @@ namespace StringKing.Functions
             }
 
             return sb.ToString();
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

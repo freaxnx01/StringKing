@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using StringKing.FunctionInterface;
 
@@ -18,6 +19,11 @@ namespace StringKing.Functions
         public override string GetTestString()
         {
             return Guid.NewGuid().ToString();
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

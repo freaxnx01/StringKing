@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Globalization;
+using System.Reflection;
 using System.Threading;
 using StringKing.FunctionInterface;
 
@@ -16,6 +17,11 @@ namespace StringKing.Functions
             string output = string.Empty;
             TextInfo ti = Thread.CurrentThread.CurrentCulture.TextInfo;
             return ti.ToTitleCase(input[0]);
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

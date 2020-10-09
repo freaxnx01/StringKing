@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.Collections.Generic;
-
+using System.Reflection;
 using StringKing.FunctionInterface;
 using System.Xml;
 
@@ -55,6 +55,11 @@ namespace StringKing.Functions
             sb.AppendLine("</root>");
             
             return sb.ToString();
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

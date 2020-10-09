@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.IO;
+using System.Reflection;
 using StringKing.FunctionInterface;
 
 namespace StringKing.Functions
@@ -34,6 +35,11 @@ namespace StringKing.Functions
         public override string GetTestString()
         {
             return "<root><record><field>text</field></record></root>";
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

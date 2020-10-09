@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using StringKing.FunctionInterface;
 
@@ -17,6 +18,11 @@ namespace StringKing.Functions
         public override string GetTestString()
         {
             return @"\, *, +, ?, |, {, [, (,), ^, $,., #";
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

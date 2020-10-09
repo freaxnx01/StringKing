@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StringKing
+﻿namespace StringKing
 {
     public static partial class StringFunctionExtension
     {
         public static string MD5Hash(this string input)
         {
-            return Functions.MD5Hasher.Execute(input);
+            return Functions.Md5Hasher.Execute(input);
         }
 
         public static string GuidGenerator(this string input)

@@ -8,8 +8,8 @@ using System.Reflection;
 
 namespace StringKing.Functions
 {
-    [StringFunction("MD5Hasher")]
-    public class MD5Hasher : StringFunctionBase
+    [StringFunction("Md5Hasher")]
+    public class Md5Hasher : StringFunctionBase
     {
         public override string ExecuteFunction(string[] input, Dictionary<string, object> arguments)
         {
@@ -29,7 +29,7 @@ namespace StringKing.Functions
 
         public static string Execute(params string[] input)
         {
-            return StringFunctionBase.CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

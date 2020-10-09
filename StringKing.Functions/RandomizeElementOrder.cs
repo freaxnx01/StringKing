@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Reflection;
 using StringKing.FunctionInterface;
 
 namespace StringKing.Functions
@@ -20,6 +20,11 @@ namespace StringKing.Functions
             }
 
             return ConvertListToString(newList);
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

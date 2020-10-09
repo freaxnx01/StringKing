@@ -23,7 +23,7 @@ namespace StringKing.Functions
         
         public static string Execute(params string[] input)
         {
-            return StringFunctionBase.CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }

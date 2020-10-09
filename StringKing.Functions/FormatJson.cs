@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Xml;
 using StringKing.FunctionInterface;
@@ -102,6 +103,11 @@ namespace StringKing.Functions
 {'wrapperType':'track', 'kind':'song', 'artistId':73012719, 'collectionId':402774938, 'trackId':402775013, 'artistName':'Janine Micheau, André Cluytens, Rita Gorr, Henri Legay, Jean Borthayre & Orchestre National de la RTF', 'collectionName':'Lalo: Le Roi d'Ys (The King of Ys), Vol. 1 [1955]', 'trackName':'Le Roi d'Ys: Act I, Tableau, \'Dans un rival je trouve un fils\'', 'collectionCensoredName':'Lalo: Le Roi d'Ys (The King of Ys), Vol. 1 [1955]', 'trackCensoredName':'Le Roi d'Ys: Act I, Tableau, \'Dans un rival je trouve un fils\'', 'collectionArtistId':4651392, 'collectionArtistName':'Rita Gorr, Janine Micheau, Henri Legay, Jean Borthayre, Orchestre National de la RTF & André Cluytens', 'collectionArtistViewUrl':'https://itunes.apple.com/us/artist/rita-gorr/id4651392?uo=4', 'artistViewUrl':'https://itunes.apple.com/us/artist/janine-micheau/id73012719?uo=4', 'collectionViewUrl':'https://itunes.apple.com/us/album/le-roi-dys-act-i-tableau-dans/id402774938?i=402775013&uo=4', 'trackViewUrl':'https://itunes.apple.com/us/album/le-roi-dys-act-i-tableau-dans/id402774938?i=402775013&uo=4', 'previewUrl':'http://a1022.phobos.apple.com/us/r30/Music7/v4/8b/dd/af/8bddafc2-a1cc-efbe-3377-f414f87accd3/mzaf_252770443892380344.plus.aac.p.m4a', 'artworkUrl30':'http://is3.mzstatic.com/image/thumb/Music/v4/63/41/48/6341481c-0294-b6d1-4d74-799b95726445/source/30x30bb.jpg', 'artworkUrl60':'http://is3.mzstatic.com/image/thumb/Music/v4/63/41/48/6341481c-0294-b6d1-4d74-799b95726445/source/60x60bb.jpg', 'artworkUrl100':'http://is3.mzstatic.com/image/thumb/Music/v4/63/41/48/6341481c-0294-b6d1-4d74-799b95726445/source/100x100bb.jpg', 'collectionPrice':9.99, 'trackPrice':0.99, 'releaseDate':'2010-11-04T07:00:00Z', 'collectionExplicitness':'notExplicit', 'trackExplicitness':'notExplicit', 'discCount':1, 'discNumber':1, 'trackCount':26, 'trackNumber':11, 'trackTimeMillis':25987, 'country':'USA', 'currency':'USD', 'primaryGenreName':'Classical', 'isStreamable':true}, 
 {'wrapperType':'track', 'kind':'song', 'artistId':494148158, 'collectionId':494148157, 'trackId':494148167, 'artistName':'The Concrete Rivals', 'collectionName':'Eat Their Weight In Snakes', 'trackName':'King Locust', 'collectionCensoredName':'Eat Their Weight In Snakes', 'trackCensoredName':'King Locust', 'artistViewUrl':'https://itunes.apple.com/us/artist/the-concrete-rivals/id494148158?uo=4', 'collectionViewUrl':'https://itunes.apple.com/us/album/king-locust/id494148157?i=494148167&uo=4', 'trackViewUrl':'https://itunes.apple.com/us/album/king-locust/id494148157?i=494148167&uo=4', 'previewUrl':'http://a896.phobos.apple.com/us/r30/Music/09/31/ff/mzm.tqdtaerv.aac.p.m4a', 'artworkUrl30':'http://is1.mzstatic.com/image/thumb/Music/v4/bb/49/f7/bb49f72b-0b9a-28a4-fdc6-a5af2557ddc6/source/30x30bb.jpg', 'artworkUrl60':'http://is1.mzstatic.com/image/thumb/Music/v4/bb/49/f7/bb49f72b-0b9a-28a4-fdc6-a5af2557ddc6/source/60x60bb.jpg', 'artworkUrl100':'http://is1.mzstatic.com/image/thumb/Music/v4/bb/49/f7/bb49f72b-0b9a-28a4-fdc6-a5af2557ddc6/source/100x100bb.jpg', 'collectionPrice':9.99, 'trackPrice':0.99, 'releaseDate':'2012-01-01T08:00:00Z', 'collectionExplicitness':'notExplicit', 'trackExplicitness':'notExplicit', 'discCount':1, 'discNumber':1, 'trackCount':12, 'trackNumber':7, 'trackTimeMillis':194813, 'country':'USA', 'currency':'USD', 'primaryGenreName':'Rock', 'isStreamable':true}]
 }".Replace("'", "\"");
+        }
+        
+        public static string Execute(params string[] input)
+        {
+            return CallDirect(MethodBase.GetCurrentMethod().DeclaringType, null, input);
         }
     }
 }
