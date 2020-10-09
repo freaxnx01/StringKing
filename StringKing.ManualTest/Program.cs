@@ -31,8 +31,13 @@ namespace StringKing.ManualTest
             result = StringKing.Functions.GuidGenerator.Execute(2);
             result = string.Empty.GuidGenerator();
             result = string.Empty.GuidGenerator(5);
-
+            
             Console.WriteLine(result);
+            
+            // Unescape, HtmlDecode
+            "&quot;Geschlecht. Werte: w=nat\u00fcrliche Person weiblichen Geschlechts; m=nat\u00fcrliche Person m\u00e4nnlichen Geschlechts.&quot;"
+                .Unescape().HtmlDecode().Dump();
+           
             Console.ReadLine();
         }
     }
