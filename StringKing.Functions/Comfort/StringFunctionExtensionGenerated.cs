@@ -2,7 +2,7 @@
 {
     public static partial class StringFunctionExtension
     {
-        public static string MD5Hash(this string input)
+        public static string Md5Hash(this string input)
         {
             return Functions.Md5Hasher.Execute(input);
         }
@@ -29,7 +29,7 @@
        
         public static string Escape(this string input)
         {
-            return Functions.Escape.Execute(input);
+            return Functions.RegexEscape.Execute(input);
         }
         
         public static string Unescape(this string input)
