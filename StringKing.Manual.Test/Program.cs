@@ -1,12 +1,7 @@
-﻿using StringKing.FunctionInterface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using StringKing;
+﻿using System;
+using StringKing.FunctionInterface;
 
-namespace StringKing.ManualTest
+namespace StringKing.Manual.Test
 {
     class Program
     {
