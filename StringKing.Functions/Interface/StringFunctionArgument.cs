@@ -21,5 +21,24 @@ namespace StringKing.FunctionInterface
         public object DefaultValue { get; set; }
         public object MinValue { get; set; }
         public object MaxValue { get; set; }
+
+        public string TypeAsString
+        {
+            get
+            {
+                if (DefaultValue == null)
+                {
+                    return nameof(String);
+                }
+                
+                var number = 0;
+                if (int.TryParse(DefaultValue.ToString(), out number))
+                {
+                    return nameof(Int32);
+                }
+                
+                return nameof(String);
+            }
+        }
     }
 }

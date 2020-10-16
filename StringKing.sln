@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKing.Functions.Test",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKing.Manual.Test", "StringKing.Manual.Test\StringKing.Manual.Test.csproj", "{7C538843-6962-4E32-A8EA-7EF601490553}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKing.CodeGenerator", "StringKing.CodeGenerator\StringKing.CodeGenerator.csproj", "{F2607749-AECE-484F-9A07-1393840F0065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7C538843-6962-4E32-A8EA-7EF601490553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C538843-6962-4E32-A8EA-7EF601490553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C538843-6962-4E32-A8EA-7EF601490553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2607749-AECE-484F-9A07-1393840F0065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2607749-AECE-484F-9A07-1393840F0065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2607749-AECE-484F-9A07-1393840F0065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2607749-AECE-484F-9A07-1393840F0065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

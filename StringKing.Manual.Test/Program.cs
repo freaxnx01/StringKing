@@ -14,7 +14,7 @@ namespace StringKing.Manual.Test
             //result = x.ExecuteFunction(new string[] { "abcd" }, null);
             
             result = StringKing.Functions.Md5Hasher.Execute("abcd");
-            result = "abcd".Md5Hash();
+            result = "abcd".Md5Hasher();
 
             // GuidGenerator
             var y = new StringKing.Functions.GuidGenerator();
