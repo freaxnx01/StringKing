@@ -11,3 +11,10 @@
 * Regex replace (Regular expression)
 * List related functions: skip lines, random element order, reverse...
 * ...
+
+### How do I get started?
+
+```csharp
+// Md5Hasher
+var result = StringKing.Functions.Md5Hasher.Execute("Lorem ipsum dolor sit amet, consetetur");
+```
