@@ -16,5 +16,5 @@
 
 ```csharp
 // Md5Hasher
-var result = StringKing.Functions.Md5Hasher.Execute("abcd");
+var result = StringKing.Functions.Md5Hasher.Execute("Lorem ipsum dolor sit amet, consetetur");
 ```
