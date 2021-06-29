@@ -4,6 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>StringKing.Functions</RootNamespace>
     <AssemblyName>StringKing.Functions</AssemblyName>
+    <PackageProjectUrl>https://github.com/freaxnx01/StringKing</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/freaxnx01/StringKing</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
