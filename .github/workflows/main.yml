@@ -24,7 +24,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore StringKing.Functions.sln
     - name: Build
       run: dotnet build StringKing.Functions.sln --configuration Release --no-restore
 #    - name: Test
