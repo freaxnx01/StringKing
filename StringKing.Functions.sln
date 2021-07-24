@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKing.Functions", "StringKing.Functions\StringKing.Functions.csproj", "{DF54C5AB-ACA0-41DC-B950-66C91130A8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringKing.Functions.Test", "StringKing.Functions.Test\StringKing.Functions.Test.csproj", "{249576B1-7344-411B-A589-086FD1461063}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF54C5AB-ACA0-41DC-B950-66C91130A8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF54C5AB-ACA0-41DC-B950-66C91130A8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF54C5AB-ACA0-41DC-B950-66C91130A8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF54C5AB-ACA0-41DC-B950-66C91130A8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249576B1-7344-411B-A589-086FD1461063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249576B1-7344-411B-A589-086FD1461063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249576B1-7344-411B-A589-086FD1461063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249576B1-7344-411B-A589-086FD1461063}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
